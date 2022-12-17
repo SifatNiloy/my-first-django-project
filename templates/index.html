@@ -4,7 +4,8 @@
 <h3>How are you doing today? </h3>
 
 <h1>Input your text below</h1>
-<form method="" action="counter">
-    <textarea name="text" rows="15" cols="30"></textarea><br>
+<form method="POST" action="counter">
+    {% csrf_token %}
+    <textarea name="text" rows="25" cols="60"></textarea><br>
     <input type="submit" >
 </form>
